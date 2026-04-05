@@ -1,0 +1,197 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.3s ease;
+}
+
+body.light-mode {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.calculator {
+    background: #2c3e50;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 320px;
+    transition: background 0.3s ease;
+}
+
+body.light-mode .calculator {
+    background: #f8f9fa;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.calculator-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calculator-header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #ecf0f1;
+}
+
+body.light-mode .calculator-header h1 {
+    color: #2c3e50;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.2s ease;
+}
+
+.toggle-btn:hover {
+    transform: scale(1.2);
+}
+
+.display {
+    background: #34495e;
+    color: #ecf0f1;
+    font-size: 2.5em;
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    min-height: 60px;
+    overflow: hidden;
+    word-wrap: break-word;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode .display {
+    background: #e8eef5;
+    color: #2c3e50;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body.light-mode .btn {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn.number {
+    background: #34495e;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn.number:hover {
+    background: #2c3e50;
+}
+
+body.light-mode .btn.number {
+    background: #d5dce3;
+    color: #2c3e50;
+}
+
+body.light-mode .btn.number:hover {
+    background: #c5cad6;
+}
+
+.btn.operator {
+    background: #e74c3c;
+}
+
+.btn.operator:hover {
+    background: #c0392b;
+}
+
+.btn.equals {
+    background: #27ae60;
+    grid-row: span 2;
+}
+
+.btn.equals:hover {
+    background: #229954;
+}
+
+.btn.clear {
+    background: #f39c12;
+}
+
+.btn.clear:hover {
+    background: #e67e22;
+}
+
+.btn.backspace {
+    background: #9b59b6;
+}
+
+.btn.backspace:hover {
+    background: #8e44ad;
+}
+
+.btn.zero {
+    grid-column: span 2;
+}
+
+body.light-mode .btn.operator {
+    background: #e74c3c;
+}
+
+body.light-mode .btn.operator:hover {
+    background: #c0392b;
+}
+
+body.light-mode .btn.equals {
+    background: #27ae60;
+}
+
+body.light-mode .btn.equals:hover {
+    background: #229954;
+}
+
+body.light-mode .btn.clear {
+    background: #f39c12;
+}
+
+body.light-mode .btn.clear:hover {
+    background: #e67e22;
+}
+
+body.light-mode .btn.backspace {
+    background: #9b59b6;
+}
+
+body.light-mode .btn.backspace:hover {
+    background: #8e44ad;
+}
