@@ -164,6 +164,43 @@ body.light-mode .btn.number:hover {
     grid-column: span 2;
 }
 
+.footer {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #bdc3c7;
+    font-size: 0.85em;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+body.light-mode .footer {
+    color: #7f8c8d;
+}
+
+body.light-mode .footer a {
+    color: #2980b9;
+}
+
+body.light-mode .footer a:hover {
+    color: #1a5276;
+}
+
 body.light-mode .btn.operator {
     background: #e74c3c;
 }
